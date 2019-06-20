@@ -9,6 +9,7 @@ verify_ssl = true
 scrapy = "*"
 bs4 = "*"
 re = "*"
+re2 = "*"
 
 [requires]
 python_version = "3.6"

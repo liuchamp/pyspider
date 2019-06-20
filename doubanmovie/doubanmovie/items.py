@@ -8,8 +8,9 @@
 import scrapy
 
 
-class XinlangspItem(scrapy.Item):
-    # page url
+class DoubanmovieItem(scrapy.Item):
+    # define the fields for your item here like:
     _id = scrapy.Field()
-    title = scrapy.Field()
-    content = scrapy.Field()
+    name = scrapy.Field()
+    pubdata = scrapy.Field()
+    score = scrapy.Field()
