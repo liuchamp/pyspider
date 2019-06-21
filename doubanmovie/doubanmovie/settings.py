@@ -20,7 +20,11 @@ USER_AGENT = 'Chrome/74.0.3729.169 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
+MONGO_URLS = [
+    'host1.com:27017', 'host2.com:27017'
+]
 
+MONGO_DATABASENAME = 'user'
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
 
@@ -64,9 +68,9 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-# ITEM_PIPELINES = {
-#    'doubanmovie.pipelines.DoubanmoviePipeline': 300,
-# }
+ITEM_PIPELINES = {
+    'doubanmovie.pipelines.DoubanmoviePipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
