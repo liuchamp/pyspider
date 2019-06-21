@@ -1,0 +1,10 @@
+thumbs.db
+logs/
+coverage/
+.idea/
+run/
+logs/
+.DS_Store
+.vscode
+*.swp
+__pycache__
